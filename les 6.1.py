@@ -126,6 +126,12 @@ tk.Label(venster, text="Beschrijving produkt: ").grid(row=0, column=0, sticky=tk
 tk.Entry(venster, width=50).grid(row=0, column=1)
 tk.Button(venster, text="VERZEND").grid(row=0, column=3)
 
+"""
+De reden dat we lambda gebruiken is omdat je geen parameters kunt meegeven
+in de functie met command, dus command=klik(10) zal niet werken. Maar een 
+lambda functie die een functie oproept met parameters kan wel, dus iets 
+als lambda: klik(10) is perfect legaal en zal prima werken. 
+"""
 rbVar = tk.IntVar() # zorgt ervoor dat we de keuze kunnen aanspreken 
 tk.Label(venster, text="Staat van het produkt:").grid(row=1, column=0, sticky=tk.W)
 tk.Radiobutton(venster, text="Nieuw", variable=rbVar, value=1, 
