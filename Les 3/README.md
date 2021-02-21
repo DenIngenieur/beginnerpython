@@ -9,20 +9,20 @@ Videos:
 
 ## Wat we leren:
 ### Deel 1
-*​ Principe: waarom, hoe, voordelen
-*​ Herschrijven + docstring
-*​ Spyder - auto generatie docstring
+* Principe: waarom, hoe, voordelen
+* Herschrijven + docstring
+* Spyder - auto generatie docstring
 * Functies zonder parameters
 * Functies met 1, 2 en meer parameters
-*​ Functies met een onbepaald aantal parameters
-*​ Argumenten bij naam en default argumenten
-*​ Nesting van functies
+* Functies met een onbepaald aantal parameters
+* Argumenten bij naam en default argumenten
+* Nesting van functies
 
 ### Deel 2
 * Optionele argumenten voor functies
 * Scope en try blocks
 * By value / by reference
-*​ Lambda functies
-*​ Map
-*​ Filter
-*​ Reduce
+* Lambda functies
+* Map
+* Filter
+* Reduce
