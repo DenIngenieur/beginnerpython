@@ -6,4 +6,4 @@ Programmeren is niet zo moeilijk, maar alle begin is moeilijk, vooral omdat er h
 
 Leren programmeren is een kwestie van doen! Veel geluk! 
 
-Er is nu ook een __[forum](https://github.com/DenIngenieur/beginnerpython/discussions "forum")__ waar je problemen kunt aankaarten, je medemens kunt helpen, je frustraties kwijt kunt en nog veel meer. Je moet wel een GitHub account hebben om te kunnen deelnemen aan de discussies. 
+Er is nu ook een __[forum](https://github.com/DenIngenieur/beginnerpython/discussions "forum")__ waar je problemen kunt aankaarten, je medemens kunt helpen, je frustraties kwijt kunt en nog veel meer. En als je ideeën hebt zijn die ook welkom! Je moet wel een GitHub account hebben om te kunnen deelnemen aan de discussies. 
