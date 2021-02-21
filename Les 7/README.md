@@ -12,7 +12,7 @@ Video: [Les 7](https://www.youtube.com/watch?v=kDKSJx5Z6Zc "Les 7")
 * GUI deel van het programma
 
 ## Links:
-* [SQLite](https://sqlite.org​ "SQLite")
-* [SQLite Studio](https://sqlitestudio.pl/​ "SQLite Studio")
-* [Leer SQL 1](https://gkoetsier.nl/tut_mysql.html​ "Leer SQL 1")
-* [Leer SQL 2](https://www.1keydata.com/nl/sql/​ "Leer SQL 2")
+* [SQLite](https://sqlite.org "SQLite")
+* [SQLite Studio](https://sqlitestudio.pl/ "SQLite Studio")
+* [Leer SQL 1](https://gkoetsier.nl/tut_mysql.html "Leer SQL 1")
+* [Leer SQL 2](https://www.1keydata.com/nl/sql/ "Leer SQL 2")
