@@ -7,13 +7,13 @@ Video: [Les 2](https://www.youtube.com/watch?v=cRL-DDtxIrg "Les 2")
 ## Wat we leren:
 * Settings Spyder
 * Beslissingen - IF / ELIF / ELSE
-*​ Loops - FOR
-*​ Loops - break & continue
-*​ Loops - WHILE
+* Loops - FOR
+* Loops - break & continue
+* Loops - WHILE
 * List
 * Tuple
-*​ Dict
-*​ Set & frozenset
+* Dict
+* Set & frozenset
 * Binair, octaal, hewadecimaal en ASCII karakters
 * documentatie plus Google translate
 
