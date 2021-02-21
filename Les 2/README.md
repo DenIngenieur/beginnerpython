@@ -1,4 +1,4 @@
-# Les 2: : Basis
+# Les 2: Basis
 
 We bekijken nog een setting in Spyder, spreken of beslissingen en loops, en de meer complexe variabelen die ingebouwd zijn in Python.
 
