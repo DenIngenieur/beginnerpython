@@ -8,8 +8,8 @@ Video: [Les 7](https://www.youtube.com/watch?v=kDKSJx5Z6Zc "Les 7")
 
 ## Wat we leren:
 * Over SQLite en SQL
-*​​ Database in python
-*​​ GUI deel van het programma
+* Database in python
+* GUI deel van het programma
 
 ## Links:
 * [SQLite](https://sqlite.org​ "SQLite")
