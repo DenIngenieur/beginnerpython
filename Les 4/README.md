@@ -7,8 +7,8 @@ Video: [Les 4](https://www.youtube.com/watch?v=VvVYeP6TYWo "Les 4")
 ## Wat we leren:
 * Functies zijn objecten - toekenning aan variabelen
 * Scope - nonlocal
-*​ Closures
-*​ Decorators - principe
-*​ Decorators - praktischer
-*​ Timing van functies
-*​ Inner functies - wat praktischer
+* Closures
+* Decorators - principe
+* Decorators - praktischer
+* Timing van functies
+* Inner functies - wat praktischer
