@@ -31,7 +31,7 @@ def faculteit(n):
         return 1
     else:
         resultaat = n * faculteit(n-1) # recursieve oproep
-        print ("tussentijds resultaat voor n= ", n, " * fuculteit(", n-1, "): ", resultaat)
+        print ("tussentijds resultaat voor n= ", n, " * faculteit(", n-1, "): ", resultaat)
     return resultaat
 
 
