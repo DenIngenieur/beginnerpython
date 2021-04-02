@@ -29,7 +29,7 @@ lengte = 5*100 # lengte in meter in cm
 hoogte = int(2.5*100) # hoogte in m meter naar cm
 oppervlakteMuur1 = lengte * hoogte
 
-hoogte = 4*100 # hoogte in m meter naar cm
+hoogte = 4*100 # hoogte in +m meter naar cm
 oppervlakteMuur2 = lengte * hoogte
 
 oppervlakteRol = 10*100 * 50 # 10m omzetten naar cm
