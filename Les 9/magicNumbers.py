@@ -27,26 +27,41 @@ aantal rollen meedelen dat de behanger nodig heeft.
 #%% initialisatie
 lengte = 5*100 # lengte in meter in cm
 hoogte = int(2.5*100) # hoogte inm meter naar cm
-# hoogte = 4*100 # hoogte inm meter naar cm
+oppervlakteMuur1 = lengte * hoogte
+
+hoogte = 4*100 # hoogte inm meter naar cm
+oppervlakteMuur2 = lengte * hoogte
 
 oppervlakteRol = 10*100 * 50 # 10m omzetten naar cm
-oppervlakteMuur = lengte * hoogte
 
 print(f"Oppervlakte rol in cm²: {oppervlakteRol}, en in m²: {oppervlakteRol/10000}")
-print(f"Oppervlakte muur in cm²: {oppervlakteMuur}, en in m²: {oppervlakteMuur/10000}")
+print(f"Oppervlakte muur 1 in cm²: {oppervlakteMuur1}, en in m²: {oppervlakteMuur1/10000}")
+print(f"Oppervlakte muur 2 in cm²: {oppervlakteMuur2}, en in m²: {oppervlakteMuur2/10000}")
+print()
 
 #%% eerste poging (// is de gehele deling):
-aantalRollen = oppervlakteMuur//oppervlakteRol
-print(f"1 - Aantal rollen: {aantalRollen}")
+aantalRollen = oppervlakteMuur1//oppervlakteRol
+print(f"1 O1 - Aantal rollen: {aantalRollen}")
+
+aantalRollen = oppervlakteMuur2//oppervlakteRol
+print(f"1 O2 - Aantal rollen: {aantalRollen}")
+print()
 
 #%% tweede poging (plus 1 rol):
-aantalRollen = (oppervlakteMuur + oppervlakteRol)//oppervlakteRol
-print(f"2 - Aantal rollen: {aantalRollen}")
+aantalRollen = (oppervlakteMuur1 + oppervlakteRol)//oppervlakteRol
+print(f"2 O1 - Aantal rollen: {aantalRollen}")
+
+aantalRollen = (oppervlakteMuur2 + oppervlakteRol)//oppervlakteRol
+print(f"2 o2 - Aantal rollen: {aantalRollen}")
+print()
 
 #%% derde poging (met het magisch nummer):
-aantalRollen = (oppervlakteMuur + oppervlakteRol - 1)//oppervlakteRol
-print(f"3 - Aantal rollen: {aantalRollen}")
+aantalRollen = (oppervlakteMuur1 + oppervlakteRol - 1)//oppervlakteRol
+print(f"3 O1 - Aantal rollen: {aantalRollen}")
 
+aantalRollen = (oppervlakteMuur2 + oppervlakteRol - 1)//oppervlakteRol
+print(f"3 O2 - Aantal rollen: {aantalRollen}")
+print()
 # Als je deze formule uitwerkt, dan krijg je:
 #     oppervlakteMuur/oppervlakteRol + 1 - 1/oppervlakteRol
 #     Je ziet direct dat die laatste term onzinnig is, wiskundig gezien.
@@ -56,23 +71,41 @@ print(f"3 - Aantal rollen: {aantalRollen}")
 # Dit is dus geen goede manier om dit op te lossen.
 
 #%% vierde poging (met floats en afronding naar boven):
-aantalRollen = ceil(oppervlakteMuur/oppervlakteRol)
-print(f"4 - Aantal rollen: {aantalRollen}")
+aantalRollen = ceil(oppervlakteMuur1/oppervlakteRol)
+print(f"4 O1 - Aantal rollen: {aantalRollen}")
+
+aantalRollen = ceil(oppervlakteMuur2/oppervlakteRol)
+print(f"4 O2 - Aantal rollen: {aantalRollen}")
+print()
 
 #%% vijfde poging (rekening houden met verlies - muren zijn nooit recht):
-aantalRollen = ceil(oppervlakteMuur/oppervlakteRol)
-if(oppervlakteMuur % oppervlakteRol == 0):
+aantalRollen = ceil(oppervlakteMuur1/oppervlakteRol)
+if(oppervlakteMuur1 % oppervlakteRol == 0):
     aantalRollen += 1
-print(f"5 - Aantal rollen: {aantalRollen}")
+print(f"5 O1 - Aantal rollen: {aantalRollen}")
+
+aantalRollen = ceil(oppervlakteMuur2/oppervlakteRol)
+if(oppervlakteMuur2 % oppervlakteRol == 0):
+    aantalRollen += 1
+print(f"5 O2 - Aantal rollen: {aantalRollen}")
+print()
 
 #%% zesde poging (rekening houden met verlies - muren zijn nooit recht):
 # python heeft geen constanten, maar de conventie is hoofletters voor de naam
 OVERSCHOT = 0.2
 
-rest, aantalRollen = modf((oppervlakteMuur + oppervlakteRol)/oppervlakteRol)
+rest, aantalRollen = modf((oppervlakteMuur1 + oppervlakteRol)/oppervlakteRol)
 print("mathf")
 print("rest =", rest)
 print("aantal rollen =", aantalRollen)
 if (rest < OVERSCHOT and rest != 0):
     aantalRollen += 1
-print(f"6 - Aantal rollen: {aantalRollen}")    
+print(f"6 O1 - Aantal rollen: {aantalRollen}")  
+
+rest, aantalRollen = modf((oppervlakteMuur2 + oppervlakteRol)/oppervlakteRol)
+print("mathf")
+print("rest =", rest)
+print("aantal rollen =", aantalRollen)
+if (rest < OVERSCHOT and rest != 0):
+    aantalRollen += 1
+print(f"6 O2 - Aantal rollen: {aantalRollen}")    
